@@ -1,3 +1,3 @@
-# Robux-Into-USD
-using tampermonkey
-https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=pl
+# Robux-Into-USD (This script might ask for permissions.)
+# Tampermonkey only!
+This script is open source and is completely safe.
