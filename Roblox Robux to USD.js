@@ -1,3 +1,5 @@
+// COPY ALL THE CODE BELOW!
+
 // ==UserScript==
 // @name         Roblox Robux to USD Converter
 // @namespace    http://tampermonkey.net/
