@@ -11,5 +11,4 @@ I tried to make this very accurate, and I think I did a good job.
 # After installation
 1. Allow permissions, if it asks.
 2. That's all, now your robux and USD is shown at the right top of your screen.
-(I recommend using dark mode it may be mandatary otherwise it's hard to read.)
-![image](https://github.com/user-attachments/assets/8a724797-17b4-4c4a-a529-12656611e216)
+(I recommend using dark mode it may be mandatary otherwise it's hard to read.) ![image](https://github.com/user-attachments/assets/8a724797-17b4-4c4a-a529-12656611e216)
