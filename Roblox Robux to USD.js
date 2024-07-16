@@ -1,9 +1,7 @@
-// COPY ALL THE CODE BELOW!
-
 // ==UserScript==
 // @name         Roblox Robux to USD Converter
 // @namespace    http://tampermonkey.net/
-// @version      v1
+// @version      v1.1
 // @description  Fetch Robux and convert to USD
 // @author       qrard
 // @match        https://www.roblox.com/*
@@ -21,7 +19,7 @@
     const gui = document.createElement('div');
     gui.id = 'robux-to-usd-gui';
     gui.style.position = 'fixed';
-    gui.style.top = '40px'; // Move 50px down from the top
+    gui.style.top = '40px'; // Move 40px down from the top
     gui.style.right = '10px';
     gui.style.padding = '10px';
     gui.style.backgroundColor = 'transparent'; // Transparent background
@@ -30,7 +28,20 @@
     gui.style.boxShadow = 'none'; // No box shadow
     gui.style.fontFamily = 'Arial, sans-serif';
     gui.style.fontSize = '24px';
-    gui.style.color = '#fffff'; // Font color set to dark gray
+    gui.style.color = '#ffffff'; // Font color set to white
+
+    // Hide button
+    const hideButton = document.createElement('button');
+    hideButton.textContent = 'Hide';
+    hideButton.style.marginLeft = '10px';
+    hideButton.style.backgroundColor = '#4CAF50'; // Green background color
+    hideButton.style.color = 'white'; // White text color
+    hideButton.style.border = 'none'; // No border
+    hideButton.style.padding = '5px 10px'; // Padding
+    hideButton.addEventListener('click', function() {
+        gui.style.display = 'none';
+    });
+    gui.appendChild(hideButton);
 
     document.body.appendChild(gui);
 
@@ -72,6 +83,9 @@
         usdElement.style.fontWeight = 'bold'; // Make text bold
         usdElement.style.textShadow = '1px 1px 2px #000'; // Add text outline
         gui.appendChild(usdElement);
+
+        // Re-add hide button
+        gui.appendChild(hideButton);
     }
 
     // Initial fetch
